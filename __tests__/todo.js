@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+
 const todoList = require("../todo");
 const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
 
@@ -8,16 +11,12 @@ describe("Todo List Test Suite", () => {
       {
         title: "Computer Networks",
         completed: false,
-        dueDate: new Date().toLocaleDateString(
-          "en-CA"
-        ),
+        dueDate: new Date().toLocaleDateString("en-CA"),
       },
       {
         title: "DBMS",
         completed: false,
-        dueDate:new Date().toLocaleDateString(
-            "en-CA"
-        ),
+        dueDate: new Date().toLocaleDateString("en-CA"),
       },
     ].forEach(add);
   });
